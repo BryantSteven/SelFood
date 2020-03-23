@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1028475350645",
+    "firebase_url": "https://selfood-badba.firebaseio.com",
+    "project_id": "selfood-badba",
+    "storage_bucket": "selfood-badba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028475350645:android:82cf6953c70c2c21c1523c",
+        "android_client_info": {
+          "package_name": "com.companyname.selfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028475350645-duoll9hb9a6m6jlc0ah7dkgq6nl7efmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCehJOuiHEPg2NGXy_yDjee7lETzUB74XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028475350645-duoll9hb9a6m6jlc0ah7dkgq6nl7efmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -17,7 +17,7 @@
             <!-- Place new controls here -->
             <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Label Text="Iniciar sesión" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
+                    <Label Text="Registro" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
                     <Label Text="Usuario" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
                     <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
                     <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />

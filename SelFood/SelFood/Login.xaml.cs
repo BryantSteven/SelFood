@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Paket;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,15 +24,15 @@ namespace SelFood
 
         async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-           /*
-            var authserve = new authservice();
-            var token = await authservice.login(email.text, password.text);
-            if (!string.isnullorempty(token)) {
-                navigation.pushmodalasync(new homepage());
-                return;
-            }
            
-            System.console.writeline("no se pudo iniciar sesión");*/
+            //var authserve = new AuthService();
+            //var token = await Authservice.login(email.text, password.text);
+            //if (!string.isnullorempty(token)) {
+            //    navigation.pushmodalasync(new homepage());
+            //    return;
+            //}
+           
+            //System.console.writeline("no se pudo iniciar sesión");
             System.Console.WriteLine(Email.Text);
             System.Console.WriteLine(Password.Text);
         }

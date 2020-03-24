@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Register">
+             x:Class="SelFood.Register"
+             BackgroundImageSource="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoLogin.jpg">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />

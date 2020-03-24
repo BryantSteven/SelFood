@@ -14,7 +14,7 @@ namespace SelFood
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.MainPage"
-             BackgroundImageSource="C:\Users\Steve\Source\Repos\BryantSteven\SelFood\SelFood\SelFood\Resources\Images\food-1932466_1920.jpg">
+             BackgroundImageSource="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Resources\Images\SplashScreen.jpeg">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -36,11 +36,11 @@
             </Grid>-->
         <StackLayout Padding="60">
 
-            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Frame BackgroundColor="BlanchedAlmond" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label Text="¿Qué deseass hacer?" HorizontalOptions="Center" Margin="20" TextColor="White" />
-                    <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero iniciar sesión" HorizontalOptions="Center" TextColor="White" Clicked="Login_Clicked" />
-                    <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero registrarme" HorizontalOptions="Center" TextColor="White" Margin="0,50,0,0" Clicked="RegisterBtn_Clicked"/>
+                    <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero iniciar sesión" HorizontalOptions="Center" TextColor="White" Clicked="Login_Clicked" FontAttributes="Bold" FontSize="Large"/>
+                    <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero registrarme" HorizontalOptions="Center" TextColor="White" Margin="0,50,0,0" Clicked="RegisterBtn_Clicked" FontAttributes="Bold" FontSize="Large"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

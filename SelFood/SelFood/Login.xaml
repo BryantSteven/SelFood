@@ -18,12 +18,12 @@
             <!-- Place new controls here -->
             <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Label Text="Registro" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
-                    <Label Text="Usuario" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
+                    <Label Text="Iniciar sesion" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
+                    <Label Text="Correo" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
                     <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
                     <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
                     <Entry x:Name="Password" Placeholder="1234.$" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
-                    <Button Text="Entrarr" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
+                    <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
                 </StackLayout>
             </Frame>
         </StackLayout>

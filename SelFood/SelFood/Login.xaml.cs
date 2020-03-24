@@ -1,9 +1,4 @@
-﻿using Paket;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SelFood.Services.Interfaces;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -24,15 +19,21 @@ namespace SelFood
 
         async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-           
-            //var authserve = new AuthService();
-            //var token = await Authservice.login(email.text, password.text);
-            //if (!string.isnullorempty(token)) {
-            //    navigation.pushmodalasync(new homepage());
+
+            //DependencyService.Get<IAuthService>();
+
+            //var authservice = DependencyService.Get<IAuthService>();
+
+
+            //var token = await authservice.SignIn(Email.Text, Password.Text);
+            //if (!string.IsNullOrEmpty(token))
+            //{
+             await Navigation.PushModalAsync(new MainPage()); //New {Pagina donde va a llevar despues de login}
             //    return;
             //}
-           
-            //System.console.writeline("no se pudo iniciar sesión");
+
+            //System.Console.WriteLine("no se pudo iniciar sesión");
+            
             System.Console.WriteLine(Email.Text);
             System.Console.WriteLine(Password.Text);
         }

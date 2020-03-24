@@ -140,7 +140,12 @@
     <None Include="Resources\Images\vegetables-2924239_1920.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\drawable\Home.png" />
+    <AndroidResource Include="Resources\drawable\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash_background.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

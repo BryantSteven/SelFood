@@ -104,5 +104,35 @@
       <Name>SelFood</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\dividers-4869454_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Estrellas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\food-1932466_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\platter-2009590_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Red back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Separador.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\spices-2548653_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\vegetables-2924239_1920.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

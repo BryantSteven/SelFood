@@ -20,5 +20,10 @@ namespace SelFood
         {
             await Navigation.PushModalAsync(new Login());
         }
+        async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Register());
+        }
+        
     }
 }

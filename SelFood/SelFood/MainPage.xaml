@@ -4,13 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.MainPage">
+             x:Class="SelFood.MainPage"
+             BackgroundImageSource="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Resources\Images\food-1932466_1920.jpg" >
     <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="Teal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></StackLayout>
         <Grid>
@@ -38,7 +39,7 @@
                     <StackLayout>
                         <Label Text="¿Qué deseas hacer?" HorizontalOptions="Center" Margin="20" TextColor="White" />
                         <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero iniciar sesión" HorizontalOptions="Center" TextColor="White" Clicked="Login_Clicked" />
-                        <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero registrarme" HorizontalOptions="Center" TextColor="White" Margin="0,50,0,0" />
+                        <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero registrarme" HorizontalOptions="Center" TextColor="White" Margin="0,50,0,0" Clicked="RegisterBtn_Clicked"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>

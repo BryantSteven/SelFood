@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace SelFood
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Register : ContentPage
+    public partial class Login : ContentPage
     {
-        public Register()
+        public Login()
         {
             InitializeComponent();
         }

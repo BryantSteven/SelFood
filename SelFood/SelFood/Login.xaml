@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SelFood.Page1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="Teal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></StackLayout>
+        <Image Source="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Images\FondoLogin.jpg" ></Image>
+        <StackLayout Padding="60">
+            <!-- Place new controls here -->
+            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Label Text="Registro" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
+                    <Label Text="Usuario" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
+                    <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
+                    <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
+                    <Entry x:Name="Password" Placeholder="1234.$" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
+                    <Button Text="Entrarr" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <Button Text="Go Back" Clicked="GoBackBtn_Clicked" HorizontalOptions="Start" VerticalOptions="Start" />
+    </Grid>
+</ContentPage>

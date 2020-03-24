@@ -64,7 +64,6 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthService.cs" />
@@ -133,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Images\vegetables-2924239_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -23,13 +23,15 @@ namespace SelFood
 
         async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            /*var authServe = new AuthService();
-            var token = await authService.login(Email.Text, Password.Text);
-            if (!string.IsNullOrEmpty(token)) {
-                Navigation.PushModalAsync(new HomePage());
+           /*
+            var authserve = new authservice();
+            var token = await authservice.login(email.text, password.text);
+            if (!string.isnullorempty(token)) {
+                navigation.pushmodalasync(new homepage());
                 return;
             }
-            System.Console.WriteLine("No se pudo iniciar sesión");*/
+           
+            System.console.writeline("no se pudo iniciar sesión");*/
             System.Console.WriteLine(Email.Text);
             System.Console.WriteLine(Password.Text);
         }

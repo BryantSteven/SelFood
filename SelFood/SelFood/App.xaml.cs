@@ -1,8 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 using SelFood.Services;
-using SelFood.Views;
 
 namespace SelFood
 {
@@ -15,6 +12,8 @@ namespace SelFood
 
             DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
+
+
         }
 
         protected override void OnStart()

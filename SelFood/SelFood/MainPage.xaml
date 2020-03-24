@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.MainPage"
-             BackgroundImageSource="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Resources\Images\SplashScreen.jpeg">
+             BackgroundImageSource="C:\Users\Steve\Source\Repos\BryantSteven\SelFood\SelFood\SelFood\Resources\Images\food-1932466_1920.jpg">
 
     <Grid>
         <Grid.ColumnDefinitions>

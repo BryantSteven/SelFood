@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelFood.Android", "SelFood\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelFood.iOS", "SelFood\SelFood.iOS\SelFood.iOS.csproj", "{0F122A6B-10D0-4B87-A02E-FFA1974DA7DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelFood", "SelFood\SelFood\SelFood.csproj", "{8B8535C4-D71C-4CA8-8F56-3212FEC49F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelFood", "SelFood\SelFood\SelFood.csproj", "{8B8535C4-D71C-4CA8-8F56-3212FEC49F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

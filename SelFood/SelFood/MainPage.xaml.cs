@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace SelFood
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public Page1()
+        public MainPage()
         {
             InitializeComponent();
+        }
+        async void Login_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Login());
         }
     }
 }

@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Page1">
+             x:Class="SelFood.Register">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -19,12 +19,12 @@
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Label Text="Registro" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
                     <Label Text="Correo electronico" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
+                    <Entry x:Name="Email" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
                     <Label Text="Usuario" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Usuario" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
-                    <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Password" Placeholder="1234.$" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
-                    <Button Text="Entrar" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
+                    <Entry x:Name="Usuario" Placeholder="Usuario" BackgroundColor="LightGray" Margin="10,0,30,0" />
+                    <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
+                    <Entry x:Name="Password" Placeholder="Contraseña.123" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
+                    <Button Text="Registrarme y entrar" VerticalOptions="EndAndExpand" TextColor="White" BackgroundColor="Red" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="RegisterBtn_Clicked" />
                 </StackLayout>
             </Frame>
         </StackLayout>

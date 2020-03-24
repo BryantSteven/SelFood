@@ -16,5 +16,13 @@ namespace SelFood
         {
             InitializeComponent();
         }
+        async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Register());
+        }
+        async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

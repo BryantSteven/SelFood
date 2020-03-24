@@ -6,6 +6,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\dividers-4869454_1280.png" />
+    <None Remove="Resources\Images\egg %281%29.png" />
+    <None Remove="Resources\Images\FondoHome.jpg" />
+    <None Remove="Resources\Images\FondoLogin.jpg" />
+    <None Remove="Resources\Images\food-1932466_1920.jpg" />
+    <None Remove="Resources\Images\Home.png" />
+    <None Remove="Resources\Images\milk.png" />
+    <None Remove="Resources\Images\olive-oil.png" />
+    <None Remove="Resources\Images\platter-2009590_1920.jpg" />
+    <None Remove="Resources\Images\potato.png" />
+    <None Remove="Resources\Images\Separador.png.png" />
+    <None Remove="Resources\Images\spices-2548653_1920.jpg" />
+    <None Remove="Resources\Images\SplashScreen.jpeg" />
+    <None Remove="Resources\Images\Usuario.jpg" />
+    <None Remove="Resources\Images\vegetables-2924239_1920.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\dividers-4869454_1280.png" />
+    <EmbeddedResource Include="Resources\Images\egg (1).png" />
+    <EmbeddedResource Include="Resources\Images\FondoHome.jpg" />
+    <EmbeddedResource Include="Resources\Images\FondoLogin.jpg" />
+    <EmbeddedResource Include="Resources\Images\food-1932466_1920.jpg" />
+    <EmbeddedResource Include="Resources\Images\Home.png" />
+    <EmbeddedResource Include="Resources\Images\milk.png" />
+    <EmbeddedResource Include="Resources\Images\olive-oil.png" />
+    <EmbeddedResource Include="Resources\Images\platter-2009590_1920.jpg" />
+    <EmbeddedResource Include="Resources\Images\potato.png" />
+    <EmbeddedResource Include="Resources\Images\Separador.png.png" />
+    <EmbeddedResource Include="Resources\Images\spices-2548653_1920.jpg" />
+    <EmbeddedResource Include="Resources\Images\SplashScreen.jpeg" />
+    <EmbeddedResource Include="Resources\Images\Usuario.jpg" />
+    <EmbeddedResource Include="Resources\Images\vegetables-2924239_1920.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Paket.Core" Version="5.242.2" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
@@ -21,6 +57,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

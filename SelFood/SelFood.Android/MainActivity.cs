@@ -25,21 +25,19 @@ namespace SelFood.Droid
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            InitFirebase();
             LoadApplication(new App());
         }
         //Conexion con base de datos
-        private void InitFirebaseAuth()
+        private void InitFirebase()
         {
             var options = new FirebaseOptions.Builder()
             .SetApplicationId("1:1028475350645:android:82cf6953c70c2c21c1523c")
             .SetApiKey("AIzaSyABSbm6wqsEFaB_4vL8ReIRXMXg1NqbF2E")
             .Build();
 
-
-
             if (app == null)
                 app = FirebaseApp.InitializeApp(this, options, "Selfood");
-
         }
         //Acaba conexion con base de datos
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

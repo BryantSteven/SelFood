@@ -36,7 +36,7 @@
             </Grid>-->
         <StackLayout Padding="60">
 
-            <Frame BackgroundColor="BlanchedAlmond" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label Text="¿Qué deseass hacer?" HorizontalOptions="Center" Margin="20" TextColor="White" />
                     <Button CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero iniciar sesión" HorizontalOptions="Center" TextColor="White" Clicked="Login_Clicked" FontAttributes="Bold" FontSize="Large"/>

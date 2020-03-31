@@ -28,7 +28,7 @@ namespace SelFood
             //var token = await authservice.SignIn(Email.Text, Password.Text);
             //if (!string.IsNullOrEmpty(token))
             //{
-             await Navigation.PushModalAsync(new MainPage()); //New {Pagina donde va a llevar despues de login}
+             await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
             //    return;
             //}
 

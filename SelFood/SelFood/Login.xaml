@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.Login"
-             BackgroundImageSource="C:\Users\luisc\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoLogin.jpg">
+             BackgroundImageSource="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoLogin.jpg">
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,17 +14,17 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="Teal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></StackLayout>
+        <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></StackLayout>
 
         <StackLayout Padding="60">
            
-            <Frame BackgroundColor="Gray" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
+            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Label Text="Iniciar sesion" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
                     <Label Text="Correo" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
+                    <Entry x:Name="Email" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
                     <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Password" Placeholder="1234.$" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
+                    <Entry x:Name="Password" Placeholder="Contraseña" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
                     <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
                 </StackLayout>
             </Frame>

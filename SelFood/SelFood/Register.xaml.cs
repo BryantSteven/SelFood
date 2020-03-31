@@ -21,14 +21,14 @@ namespace SelFood
         }
         async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new Register());
+            await Navigation.PushModalAsync(new Home());
 
             //var authservice = DependencyService.Get<IAuthService>();
 
 
             //var token = await authservice.SignUp(Email.Text, Password.Text);
             //if (!string.IsNullOrEmpty(token))
-            //{
+            //{ 
             //    await Navigation.PushModalAsync(new MainPage()); //New {Pagina donde va a llevar despues de login}
             //    return;
             //}

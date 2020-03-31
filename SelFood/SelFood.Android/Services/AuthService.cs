@@ -9,44 +9,62 @@ namespace SelFood.Droid.Services
 {
     public class AuthService : IAuthService
     {
-        //public AuthService() {
-        //    var instance = FirebaseAuth.GetInstance(app);
-        //    if (instance == null)
-        //    {
-        //        instance = new FirebaseAuth(app);
-        //    }
-        //}
-        public async Task<string> SignIn(string email, string password)
+        public string getAuthKey()
+        {
+            throw new NotImplementedException();
+        }
+         // Comprobar si el usuario ya esta logeado
+        public bool IsUserSigned()
+        {
+            var user = Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            var signedIn = user != null;
+            return signedIn;
+        }
+        // Salir de la aplicacion
+        public async Task<bool> Logout()
         {
             try
             {
-                var prueba = FirebaseAuth.Instance;
-
-                var user = await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
-                var token = await user.User.GetIdTokenAsync(false);
-                return token.Token;
+                Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignOut();
+                return true;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-
-                return string.Empty;
+                return false;
             }
         }
+         //Fin de salir de la aplicacion
 
-        public async Task<string> SignUp(string email, string password)
+         // Login con contraseña y email
+        public async Task<bool> SignIn(string email, string password)
         {
             try
             {
-                var user = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
-                var token = await user.User.GetIdTokenAsync(false);
-                return token.Token;
-            }
-            catch (Exception)
-            {
 
-                throw;
+                await Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignInWithEmailAndPasswordAsync(email, password);
+                return true;
             }
-           
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
+         //Fin login contraseña y email.
+
+        public void SignInWithGoogle()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> SignInWithGoogle(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> SignUp(string email, string password)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

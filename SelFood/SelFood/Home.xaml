@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Home">
+             x:Class="SelFood.Home"
+             BackgroundImageSource="Splash.jpg">
     <!--<Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />-->
 
     <Grid IsVisible="True">
@@ -17,34 +18,25 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <StackLayout Grid.Column="0" Grid.Row="0" Margin="0,60,0,40">
-            <Image Source="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\potato.png" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0"></Image>
+            <Image Source="potato.png" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0"></Image>
             <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
 
         </StackLayout>
         <StackLayout Grid.Column="0" Grid.Row="1" Margin="0,100,0,50">
-            <Image Source="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\olive-oil.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="1"></Image>
-            <Button 
-                Text="Seleccionar "
-                VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
+            <Image Source="oliveoil.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="1"></Image>
+            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
 
         </StackLayout>
         <StackLayout Grid.Column="1" Grid.Row="0" Margin="0,60,0,40">
-            <Image Source="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\egg (1).png" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center"></Image>
+            <Image Source="egg1.png" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center"></Image>
             <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
         </StackLayout>
-        <Button 
-            Text="Go Back"  
-            HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
+        <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
+        <Button Text="Trueque" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Grid.Column="1" Grid.Row="0" Clicked="Butt_Trueque_Clicked"></Button>
         <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,60" Grid.Row="1" Grid.Column="1" />
         <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50">
-            <Image Source="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\milk.png" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Image>
-            <Button 
-                Text="Seleccionar" 
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" 
-                BackgroundColor="Red" 
-                TextColor="White"
-                FontSize="Micro" ></Button>
+            <Image Source="milk.png" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Image>
+            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
         </StackLayout>
     </Grid>
     <!--<Grid>

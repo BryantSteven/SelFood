@@ -7,13 +7,13 @@
 
   <ItemGroup>
     <None Remove="Resources\Images\dividers-4869454_1280.png" />
-    <None Remove="Resources\Images\egg %281%29.png" />
+    <None Remove="Resources\Images\egg1.png" />
     <None Remove="Resources\Images\FondoHome.jpg" />
     <None Remove="Resources\Images\FondoLogin.jpg" />
     <None Remove="Resources\Images\food-1932466_1920.jpg" />
     <None Remove="Resources\Images\Home.png" />
     <None Remove="Resources\Images\milk.png" />
-    <None Remove="Resources\Images\olive-oil.png" />
+    <None Remove="Resources\Images\oliveoil.png" />
     <None Remove="Resources\Images\platter-2009590_1920.jpg" />
     <None Remove="Resources\Images\potato.png" />
     <None Remove="Resources\Images\Separador.png.png" />
@@ -25,13 +25,13 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Images\dividers-4869454_1280.png" />
-    <EmbeddedResource Include="Resources\Images\egg (1).png" />
+    <EmbeddedResource Include="Resources\Images\egg1.png" />
     <EmbeddedResource Include="Resources\Images\FondoHome.jpg" />
     <EmbeddedResource Include="Resources\Images\FondoLogin.jpg" />
     <EmbeddedResource Include="Resources\Images\food-1932466_1920.jpg" />
     <EmbeddedResource Include="Resources\Images\Home.png" />
     <EmbeddedResource Include="Resources\Images\milk.png" />
-    <EmbeddedResource Include="Resources\Images\olive-oil.png" />
+    <EmbeddedResource Include="Resources\Images\oliveoil.png" />
     <EmbeddedResource Include="Resources\Images\platter-2009590_1920.jpg" />
     <EmbeddedResource Include="Resources\Images\potato.png" />
     <EmbeddedResource Include="Resources\Images\Separador.png.png" />
@@ -68,6 +68,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Register.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Trueque.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

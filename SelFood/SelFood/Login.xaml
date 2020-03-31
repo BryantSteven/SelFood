@@ -5,8 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.Login"
-             BackgroundImageSource="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoLogin.jpg">
-
+             BackgroundImageSource="SplashScreen.jpeg">
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />

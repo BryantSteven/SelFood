@@ -24,11 +24,11 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" 
                 Padding="0">
-                
+
                 <StackLayout 
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-                    
+
                     <Label 
                         Text="Registro" 
                         HorizontalOptions="Start" 
@@ -36,45 +36,45 @@
                         Padding="5,8,50,8" 
                         TextColor="White" 
                         BackgroundColor="Red" />
-                    
+
                     <Label
                         Text="Correo electronico" 
                         HorizontalOptions="Start"
                         Margin="0,10,0,0" 
                         Padding="5,8,50,8" 
                         TextColor="White" />
-                    
+
                     <Entry
-                        x:Name="Mail" 
+                        x:Name="EmailTxt" 
                         Placeholder="Correo@Correo.com"
                         BackgroundColor="LightGray" 
                         Margin="10,0,30,0" />
-                    
+
                     <Label 
                         Text="Usuario"
                         HorizontalOptions="Start" 
                         Margin="0,10,0,0" 
                         Padding="5,8,50,8" 
                         TextColor="White" />
-                    
+
                     <Entry 
-                        x:Name="Usuario"
+                        x:Name="UsernameTxt"
                         Placeholder="Usuario"
                         BackgroundColor="LightGray" 
                         Margin="10,0,30,0" />
-                    
+
                     <Label
                         Text="Contraseña"
                         HorizontalOptions="Start"
                         Margin="0,10,0,0" Padding="5,8,50,8" 
                         TextColor="White" />
-                    
+
                     <Entry
-                        x:Name="Pass" 
+                        x:Name="PasswordTxt" 
                         Placeholder="Contraseña"
                         BackgroundColor="LightGray" 
                         Margin="10,0,30,0" IsPassword="True" />
-                    
+
                     <Button 
                         Text="Registrarme y entrar" 
                         VerticalOptions="EndAndExpand" 
@@ -83,7 +83,7 @@
                         HorizontalOptions="Center" 
                         Margin="0,0,0,30" 
                         Clicked="RegisterBtn_Clicked" />
-                    
+
                 </StackLayout>
             </Frame>
         </StackLayout>

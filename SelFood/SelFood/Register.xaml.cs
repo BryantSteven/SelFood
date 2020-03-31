@@ -1,10 +1,5 @@
-﻿using SelFood.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using SelFood.Models;
+using SelFood.Services.Interfaces;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,42 +16,22 @@ namespace SelFood
         }
         private async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            var authService = DependencyService.Get<IAuthService>();
+            var token = await authService.SignUp(new User { Email = EmailTxt.Text, Username = UsernameTxt.Text, Password = PasswordTxt.Text });
 
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                await DisplayAlert("Alerta", "No se pudo registrar el usuario", "OK");
+                return;
+            }
 
-            string mail = Mail.Text;
-            string pass = Pass.Text;
-
-            var fbLogin = DependencyService.Get<IAuthService>();
-            var token = await fbLogin.DoRegisterWithEP(mail, pass);
-            await DisplayAlert("Alerta", token, "OK");
-
-
-
-            //await Navigation.PushModalAsync(new Home());
-
-            //var authservice = DependencyService.Get<IAuthService>();
-
-
-            //var token = await authservice.SignUp(Email.Text, Password.Text);
-            //if (token == true)
-            //{
-            //    await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
-            //    return;
-            //}else {
-
-            //System.Console.WriteLine("no se pudo registrar nuevo usuario");
-            //}
-
-            //System.Console.WriteLine(Email.Text);
-            //System.Console.WriteLine(Password.Text);
+            await Navigation.PushModalAsync(new Home());
         }
 
-    
+
         async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PopModalAsync();
-
-
         }
     }
 }

@@ -19,7 +19,7 @@
             <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
                 <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <Label Text="Iniciar sesión" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
-                    <Entry x:Name="Emalllil" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
+                    <Entry x:Name="Email" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
                     <Entry x:Name="Password" Placeholder="Contraseña" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
                     <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
                 </StackLayout>

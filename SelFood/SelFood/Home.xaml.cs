@@ -23,5 +23,10 @@ namespace SelFood
 
 
         }
+
+         async void Butt_Trueque_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Trueque());
+        }
     }
 }

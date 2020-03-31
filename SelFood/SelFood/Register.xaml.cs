@@ -23,17 +23,18 @@ namespace SelFood
         {
             await Navigation.PushModalAsync(new Home());
 
-            //var authservice = DependencyService.Get<IAuthService>();
+            var authservice = DependencyService.Get<IAuthService>();
 
 
-            //var token = await authservice.SignUp(Email.Text, Password.Text);
-            //if (!string.IsNullOrEmpty(token))
-            //{ 
-            //    await Navigation.PushModalAsync(new MainPage()); //New {Pagina donde va a llevar despues de login}
-            //    return;
-            //}
+            var token = await authservice.SignUp(Email.Text, Password.Text);
+            if (token == true)
+            {
+                await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
+                return;
+            }else {
 
-            //System.Console.WriteLine("no se pudo registrar nuevo usuario");
+            System.Console.WriteLine("no se pudo registrar nuevo usuario");
+            }
 
             System.Console.WriteLine(Email.Text);
             System.Console.WriteLine(Password.Text);

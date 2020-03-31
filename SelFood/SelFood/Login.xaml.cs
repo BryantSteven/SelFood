@@ -20,20 +20,23 @@ namespace SelFood
         async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
 
-            //DependencyService.Get<IAuthService>();
+            DependencyService.Get<IAuthService>();
 
-            //var authservice = DependencyService.Get<IAuthService>();
+            var authservice = DependencyService.Get<IAuthService>();
 
 
-            //var token = await authservice.SignIn(Email.Text, Password.Text);
-            //if (!string.IsNullOrEmpty(token))
-            //{
+            var token = await  authservice.SignIn(Email.Text, Password.Text);
+
+            if (token == true)
+            {
              await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
-            //    return;
-            //}
+                return;
+            }
+            else { 
 
-            //System.Console.WriteLine("no se pudo iniciar sesión");
-            
+            System.Console.WriteLine("no se pudo iniciar sesión");
+                }
+
             System.Console.WriteLine(Email.Text);
             System.Console.WriteLine(Password.Text);
         }

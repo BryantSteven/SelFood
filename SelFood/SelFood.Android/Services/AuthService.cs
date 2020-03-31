@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Android.Gms.Extensions;
 using Firebase.Auth;
 using SelFood.Droid.Services;
 using SelFood.Services.Interfaces;
@@ -41,7 +42,7 @@ namespace SelFood.Droid.Services
             try
             {
 
-                await Firebase.Auth.FirebaseAuth.GetInstance(MainActivity.app).SignInWithEmailAndPasswordAsync(email, password);
+                await FirebaseAuth.GetInstance(MainActivity.app).SignInWithEmailAndPasswordAsync(email, password);
                 return true;
             }
             catch (Exception ex)
@@ -61,9 +62,18 @@ namespace SelFood.Droid.Services
             throw new NotImplementedException();
         }
 
-        public Task<bool> SignUp(string email, string password)
+        public async Task<bool> SignUp(string email, string password)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                await FirebaseAuth.GetInstance(MainActivity.app).CreateUserWithEmailAndPasswordAsync( email,  password);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
     }

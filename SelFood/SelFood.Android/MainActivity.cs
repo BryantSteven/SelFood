@@ -21,7 +21,11 @@ using Firebase;
 
 namespace SelFood.Droid
 {
-    [Activity(Label = "SelFood", Icon = "@mipmap/icon", Theme = "@style/MyTheme.Splash", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SelFood",
+        Icon = "@mipmap/icon",
+        MainLauncher = false,
+        Theme ="@style/MainTheme",
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         public static FirebaseApp app;

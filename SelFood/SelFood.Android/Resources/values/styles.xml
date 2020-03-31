@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-
-
-	<style name="MyTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
-		<item name="android:windowBackground">@drawable/splash_background</item>
-	</style>
-	
 	
 	<style name="MainTheme" parent="MainTheme.Base">
 	</style>
@@ -32,13 +26,11 @@
 
 	<style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
 		<item name="colorAccent">#FF4081</item>
-
-		<!--Splash Screen--><!--
-		<style name="Theme.Splash" parent="android:Theme">
-			<item name="android:windowBackground”>@drawable/Home"></item>
-			<item name="android:windowNoTitle”>true"></item>/item>
-			<item name="android:windowFullscreen”>true"></item>
-			<item name="colorPrimaryDark”>#313131"></item>
-		</style>-->
 	</style>
+  
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/Splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
 </resources>

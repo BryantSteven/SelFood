@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Home"
-             BackgroundImageSource="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoHome.jpg">
+             x:Class="SelFood.Home">
     <!--<Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />-->
 
     <Grid IsVisible="True">

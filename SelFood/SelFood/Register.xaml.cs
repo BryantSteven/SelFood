@@ -19,25 +19,36 @@ namespace SelFood
             InitializeComponent();
 
         }
-        async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
+        private async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new Home());
-
-            var authservice = DependencyService.Get<IAuthService>();
 
 
-            var token = await authservice.SignUp(Email.Text, Password.Text);
-            if (token == true)
-            {
-                await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
-                return;
-            }else {
+            string mail = Mail.Text;
+            string pass = Pass.Text;
 
-            System.Console.WriteLine("no se pudo registrar nuevo usuario");
-            }
+            var fbLogin = DependencyService.Get<IAuthService>();
+            var token = await fbLogin.DoRegisterWithEP(mail, pass);
+            await DisplayAlert("Alerta", token, "OK");
 
-            System.Console.WriteLine(Email.Text);
-            System.Console.WriteLine(Password.Text);
+
+
+            //await Navigation.PushModalAsync(new Home());
+
+            //var authservice = DependencyService.Get<IAuthService>();
+
+
+            //var token = await authservice.SignUp(Email.Text, Password.Text);
+            //if (token == true)
+            //{
+            //    await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
+            //    return;
+            //}else {
+
+            //System.Console.WriteLine("no se pudo registrar nuevo usuario");
+            //}
+
+            //System.Console.WriteLine(Email.Text);
+            //System.Console.WriteLine(Password.Text);
         }
 
     

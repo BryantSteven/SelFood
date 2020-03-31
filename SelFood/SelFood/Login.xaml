@@ -16,15 +16,52 @@
         </Grid.RowDefinitions>
         <StackLayout Padding="60">
            
-            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Label Text="Iniciar sesión" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
-                    <Entry x:Name="Email" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
-                    <Entry x:Name="Password" Placeholder="Contraseña" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
-                    <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
+            <Frame
+                BackgroundColor="Black" 
+                CornerRadius="20" 
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" 
+                Padding="0">
+                
+                <StackLayout 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand">
+                    
+                    <Label
+                        Text="Iniciar sesión"
+                        HorizontalOptions="Start"
+                        Margin="0,50,0,20" 
+                        Padding="5,8,50,8"
+                        TextColor="White"
+                        BackgroundColor="Red" />
+                    
+                    <Entry 
+                        x:Name="Mail"
+                        Placeholder="Correo@Correo.com" 
+                        BackgroundColor="LightGray" 
+                        Margin="10,0,30,10" />
+                    
+                    <Entry 
+                        x:Name="Pass" 
+                        Placeholder="Contraseña" 
+                        BackgroundColor="LightGray" 
+                        Margin="10,0,30,0" IsPassword="True" />
+                    
+                    <Button 
+                        Text="Entrar" 
+                        VerticalOptions="EndAndExpand" 
+                        BackgroundColor="Red" 
+                        TextColor="White" 
+                        HorizontalOptions="Center" 
+                        Margin="0,0,0,30" 
+                        Clicked="LoginBtn_Clicked" />
+                    
                 </StackLayout>
             </Frame>
         </StackLayout>
-        <Button Text="Go Back" Clicked="GoBackBtn_Clicked" HorizontalOptions="Start" VerticalOptions="Start" />
+        <Button Text="Go Back"
+                Clicked="GoBackBtn_Clicked"
+                HorizontalOptions="Start"
+                VerticalOptions="Start" />
     </Grid>
 </ContentPage>

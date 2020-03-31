@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.Register"
-             BackgroundImageSource="C:\Users\Steve\source\repos\SelFood\SelFood\SelFood\Resources\Images\FondoLogin.jpg">
+             BackgroundImageSource="@Images/FondoLogin">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -13,20 +13,77 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></StackLayout>
+        <StackLayout BackgroundColor="White" 
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand"></StackLayout>
         <StackLayout Padding="60">
             <!-- Place new controls here -->
-            <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Label Text="Registro" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
-                    <Label Text="Correo electronico" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Email" Placeholder="Correo@Correo.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
-                    <Label Text="Usuario" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Usuario" Placeholder="Usuario" BackgroundColor="LightGray" Margin="10,0,30,0" />
-                    <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,10,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Password" Placeholder="Contraseña
-                           " BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
-                    <Button Text="Registrarme y entrar" VerticalOptions="EndAndExpand" TextColor="White" BackgroundColor="Red" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="RegisterBtn_Clicked" />
+            <Frame 
+                BackgroundColor="Black" 
+                CornerRadius="20" 
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" 
+                Padding="0">
+                
+                <StackLayout 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                    
+                    <Label 
+                        Text="Registro" 
+                        HorizontalOptions="Start" 
+                        Margin="0,50,0,0" 
+                        Padding="5,8,50,8" 
+                        TextColor="White" 
+                        BackgroundColor="Red" />
+                    
+                    <Label
+                        Text="Correo electronico" 
+                        HorizontalOptions="Start"
+                        Margin="0,10,0,0" 
+                        Padding="5,8,50,8" 
+                        TextColor="White" />
+                    
+                    <Entry
+                        x:Name="Mail" 
+                        Placeholder="Correo@Correo.com"
+                        BackgroundColor="LightGray" 
+                        Margin="10,0,30,0" />
+                    
+                    <Label 
+                        Text="Usuario"
+                        HorizontalOptions="Start" 
+                        Margin="0,10,0,0" 
+                        Padding="5,8,50,8" 
+                        TextColor="White" />
+                    
+                    <Entry 
+                        x:Name="Usuario"
+                        Placeholder="Usuario"
+                        BackgroundColor="LightGray" 
+                        Margin="10,0,30,0" />
+                    
+                    <Label
+                        Text="Contraseña"
+                        HorizontalOptions="Start"
+                        Margin="0,10,0,0" Padding="5,8,50,8" 
+                        TextColor="White" />
+                    
+                    <Entry
+                        x:Name="Pass" 
+                        Placeholder="Contraseña"
+                        BackgroundColor="LightGray" 
+                        Margin="10,0,30,0" IsPassword="True" />
+                    
+                    <Button 
+                        Text="Registrarme y entrar" 
+                        VerticalOptions="EndAndExpand" 
+                        TextColor="White" 
+                        BackgroundColor="Red" 
+                        HorizontalOptions="Center" 
+                        Margin="0,0,0,30" 
+                        Clicked="RegisterBtn_Clicked" />
+                    
                 </StackLayout>
             </Frame>
         </StackLayout>

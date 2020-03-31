@@ -17,28 +17,37 @@ namespace SelFood
             await Navigation.PopModalAsync();
         }
 
-        async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
+        private async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
 
-            DependencyService.Get<IAuthService>();
+            string mail = Mail.Text;
+            string pass = Pass.Text;
 
-            var authservice = DependencyService.Get<IAuthService>();
+            var fbLogin = DependencyService.Get<IAuthService>();
+            string token = await fbLogin.DoLoginWithEP(mail, pass);
+            await DisplayAlert("Alerta", token, "OK");
 
 
-            var token = await  authservice.SignIn(Email.Text, Password.Text);
+            //    DependencyService.Get<IAuthService>();
 
-            if (token == true)
-            {
-             await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
-                return;
-            }
-            else { 
+            //    var authservice = DependencyService.Get<IAuthService>();
 
-            System.Console.WriteLine("no se pudo iniciar sesión");
-                }
 
-            System.Console.WriteLine(Email.Text);
-            System.Console.WriteLine(Password.Text);
+            //    var token = await  authservice.SignIn(Email.Text, Password.Text);
+
+            //    if (token == true)
+            //    {
+            //     await Navigation.PushModalAsync(new Home()); //New {Pagina donde va a llevar despues de login}
+            //        return;
+            //    }
+            //    else { 
+
+            //    System.Console.WriteLine("no se pudo iniciar sesión");
+            //        }
+
+            //    System.Console.WriteLine(Email.Text);
+            //    System.Console.WriteLine(Password.Text);
+            //}
         }
     }
 }

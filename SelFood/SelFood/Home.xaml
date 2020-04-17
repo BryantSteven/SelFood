@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <StackLayout Grid.Column="0" Grid.Row="0" Margin="0,60,0,40">
             <Image Source="potato.png" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0"></Image>
-            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
+            <Button x:Name="papa" Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro"  ></Button>
 
         </StackLayout>
         <StackLayout Grid.Column="0" Grid.Row="1" Margin="0,100,0,50">
@@ -34,32 +34,10 @@
         <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
         <Button Text="Trueque" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Grid.Column="1" Grid.Row="0" Clicked="Butt_Trueque_Clicked"></Button>
         <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,60" Grid.Row="1" Grid.Column="1" />
-        <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50">
+        <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50"><Button Text="" />
             <Image Source="milk.png" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Image>
             <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
         </StackLayout>
     </Grid>
-    <!--<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        
-        <StackLayout Padding="60">
-            
-            <Frame BackgroundColor="Gray" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <Label Text="Iniciar sesion" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" BackgroundColor="Red" />
-                    <Label Text="Correo" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Email" Placeholder="prueba@mail.com" BackgroundColor="LightGray" Margin="10,0,30,0" />
-                    <Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />
-                    <Entry x:Name="Password" Placeholder="1234.$" BackgroundColor="LightGray" Margin="10,0,30,0" IsPassword="True" />
-                    <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,30" Clicked="LoginBtn_Clicked" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-        <Button Text="Go Back" Clicked="GoBackBtn_Clicked" HorizontalOptions="Start" VerticalOptions="Start" />
-    </Grid>-->
+
 </ContentPage>

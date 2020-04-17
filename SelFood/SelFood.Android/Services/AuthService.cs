@@ -43,5 +43,18 @@ namespace SelFood.Droid.Services
             }
             return string.Empty;
         }
+        //public async task<string> AddIngredient(Ingrediente ingrediente)
+        //{
+        //    try
+        //    {
+
+        //    }
+        //    catch (Exception f)
+        //    {
+
+        //        Console.WriteLine(($"Error: {f}");
+        //    }
+        //    return string.Empty;
+        //}
     }
 }

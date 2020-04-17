@@ -48,7 +48,7 @@
                         x:Name="EmailTxt" 
                         Placeholder="Correo@Correo.com"
                         BackgroundColor="LightGray" 
-                        Margin="10,0,30,0" />
+                        Margin="10,0,30,0" Keyboard="Email" />
 
                     <Label 
                         Text="Usuario"
@@ -61,7 +61,7 @@
                         x:Name="UsernameTxt"
                         Placeholder="Usuario"
                         BackgroundColor="LightGray" 
-                        Margin="10,0,30,0" />
+                        Margin="10,0,30,0" Keyboard="Plain" />
 
                     <Label
                         Text="Contraseña"

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,6 +9,7 @@ namespace SelFood
     {
         public Home()
         {
+            
             InitializeComponent();
         }
 
@@ -28,5 +24,20 @@ namespace SelFood
         {
             await Navigation.PushModalAsync(new Trueque());
         }
-    }
+        ////async void Butt_ingresarPapa_Clicked(object sender, EventArgs e)
+        ////{
+        ////    
+        ////    await firebase
+        ////    .Child("Ingredients")
+        ////    .PostAsync(new (ingredient) { ingredientId = 1, Name = papa });
+        ////}
+       
+        //public async Task Addingredient(string ingredient)
+        //{
+
+        //    await firebase.Child("Ingredients").PostAsync(new ingredient() { IngredientId = new IngredientId, Name = ingredient });
+              
+              
+
+        }
 }

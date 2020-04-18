@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <StackLayout Grid.Column="0" Grid.Row="0" Margin="0,60,0,40">
             <Image Source="potato.png" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0"></Image>
-            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
+            <Button x:Name="papa" Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro"  ></Button>
 
         </StackLayout>
         <StackLayout Grid.Column="0" Grid.Row="1" Margin="0,100,0,50">
@@ -31,12 +31,21 @@
             <Image Source="egg1.png" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center"></Image>
             <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
         </StackLayout>
+
             <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
             <Button Text="Trueque" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Grid.Column="1" Grid.Row="0" Clicked="Butt_Trueque_Clicked"></Button>
             <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,60" Grid.Row="1" Grid.Column="1" />
         <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50">
+
+        <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
+        <Button Text="Trueque" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Grid.Column="1" Grid.Row="0" Clicked="Butt_Trueque_Clicked"></Button>
+        <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,60" Grid.Row="1" Grid.Column="1" />
+        </StackLayout>
+            <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50"><Button Text="" />
+
             <Image Source="milk.png" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Image>
             <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
         </StackLayout>
     </Grid>
+
 </ContentPage>

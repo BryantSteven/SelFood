@@ -39,7 +39,7 @@
                         x:Name="EmailTxt"
                         Placeholder="Correo@Correo.com" 
                         BackgroundColor="LightGray" 
-                        Margin="10,0,30,10" />
+                        Margin="10,0,30,10" Keyboard="Email" />
 
                     <Entry 
                         x:Name="PasswordTxt" 

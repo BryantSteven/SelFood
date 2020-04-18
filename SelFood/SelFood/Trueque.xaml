@@ -5,33 +5,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.Trueque"
-             BackgroundImageSource="Splash.jpg">
+             BackgroundImageSource="splash.jpg">
     
         <StackLayout>
             <ScrollView>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"  />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid>
-                        <StackLayout Grid.Column="1">
-                            <Button Text="Postear" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" Margin="0.40, 0.40"></Button> 
-                        </StackLayout>
-                        <StackLayout Grid.Column="0" Grid.Row="1">
-                            <Button Text="Buscar Post" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Grid.Column="0" Grid.Row="1"></Button>
-                        </StackLayout>
-                        <StackLayout Grid.Row="2" Margin="0.50" Padding="0.40" VerticalOptions="CenterAndExpand">
-                            <Entry Placeholder="Inserta tu post"></Entry>
-                        </StackLayout>
-                        
-                    </Grid>
-                </Grid>
-            </ScrollView>
-        </StackLayout>
+            <Entry Placeholder="Que producto buscas ?" TextColor="White" Keyboard="Plain" Opacity="1" PlaceholderColor="#FFFFFF" />
+        </ScrollView>
+        
+            <Label 
+                Text="Trueque "  
+                TextColor="White"
+                />
+        <Label 
+                Text="Trueque"  
+                TextColor="White"/>
+        <Label 
+                Text="Trueque"  
+                TextColor="White"/>
+        <Label 
+                Text="Trueque"  
+                TextColor="White"/>
+        <Label 
+                Text="Trueque"  
+                TextColor="White"/>
+        <Label 
+                Text="Trueque"  
+                TextColor="White"/>
+
+
+
+    </StackLayout>
    
 </ContentPage>

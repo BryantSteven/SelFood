@@ -1,4 +1,9 @@
 ﻿using SelFood.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,11 +14,14 @@ namespace SelFood
     {
         public Login()
         {
+
+           
             InitializeComponent();
         }
-        async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
+
+        async void RegisterBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PushModalAsync(new Register());
         }
 
         private async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)

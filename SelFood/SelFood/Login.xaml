@@ -4,64 +4,61 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Login"
-             BackgroundImageSource="SplashScreen.jpeg">
-    
+             x:Class="SelFood.Login">
+
+    <ContentPage.Content>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackLayout Padding="60">
+        <Image Source="loginimage.jpg" Aspect="AspectFill"/>
+        <BoxView Color="#3b83bd" Opacity="0.6"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
 
-            <Frame
-                BackgroundColor="Black" 
-                CornerRadius="20" 
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand" 
-                Padding="0">
+                <Image Grid.Row="0" Source="icono.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
 
-                <StackLayout 
-                    HorizontalOptions="FillAndExpand" 
-                    VerticalOptions="FillAndExpand">
-
-                    <Label
-                        Text="Iniciar sesión"
-                        HorizontalOptions="Start"
-                        Margin="0,50,0,20" 
-                        Padding="5,8,50,8"
-                        TextColor="White"
-                        BackgroundColor="Red" />
-
+                <StackLayout Grid.Row="1" Padding="30, 20">
                     <Entry 
                         x:Name="EmailTxt"
-                        Placeholder="Correo@Correo.com" 
-                        BackgroundColor="LightGray" 
-                        Margin="10,0,30,10" Keyboard="Email" />
+                        Placeholder="Usuario" PlaceholderColor="White" 
+                        Keyboard="Email" />
 
                     <Entry 
-                        x:Name="PasswordTxt" 
-                        Placeholder="Contraseña" 
-                        BackgroundColor="LightGray" 
-                        Margin="10,0,30,0" IsPassword="True" />
+                        x:Name="PasswordTxt"
+                        Placeholder="Contraseña" PlaceholderColor="White"
+                        IsPassword="True" />
 
                     <Button 
-                        Text="Entrar" 
-                        VerticalOptions="EndAndExpand" 
-                        BackgroundColor="Red" 
-                        TextColor="White" 
-                        HorizontalOptions="Center" 
-                        Margin="0,0,0,30" 
+                        Text="Iniciar sesión" BackgroundColor="White" BorderRadius="20"
+                        TextColor="#3b83bd"
                         Clicked="LoginBtn_Clicked" />
+                    <Button 
+                        Text="Registrar" BackgroundColor="White" BorderRadius="20"
+                        TextColor="#3b83bd"
+                        Clicked="RegisterBtn_Clicked"/>
 
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text ="¿Recuperar contraseña?" FontAttributes="Bold"/>
+                    </StackLayout>
+               </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+                    <Label Text=" Iniciar sesión con" HorizontalOptions="Center"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Grid.Row="0" Source="icono.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="icono.png" WidthRequest="45" HeightRequest="45"/>
+                        <Image Grid.Row="0" Source="icono.png" WidthRequest="45" HeightRequest="45"/>
+                    </StackLayout>
                 </StackLayout>
-            </Frame>
-        </StackLayout>
-        <Button Text="Go Back"
-                Clicked="GoBackBtn_Clicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Start" />
+                
+            </Grid>
+        
+               
     </Grid>
+
+
+    </ContentPage.Content>
+    
 </ContentPage>

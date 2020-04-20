@@ -46,5 +46,6 @@ namespace SelFood.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 }

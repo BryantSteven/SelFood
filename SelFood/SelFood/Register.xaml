@@ -4,89 +4,46 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SelFood.Register"
-             BackgroundImageSource="@Images/FondoLogin">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="White" 
-                     HorizontalOptions="FillAndExpand" 
-                     VerticalOptions="FillAndExpand"></StackLayout>
-        <StackLayout Padding="60">
-            <!-- Place new controls here -->
-            <Frame 
-                BackgroundColor="Black" 
-                CornerRadius="20" 
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand" 
-                Padding="0">
+             x:Class="SelFood.Register">
 
-                <StackLayout 
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="loginimage.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#3b83bd" Opacity="0.6"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
 
-                    <Label 
-                        Text="Registro" 
-                        HorizontalOptions="Start" 
-                        Margin="0,50,0,0" 
-                        Padding="5,8,50,8" 
-                        TextColor="White" 
-                        BackgroundColor="Red" />
+                <Image Grid.Row="0" Source="icono.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
 
-                    <Label
-                        Text="Correo electronico" 
-                        HorizontalOptions="Start"
-                        Margin="0,10,0,0" 
-                        Padding="5,8,50,8" 
-                        TextColor="White" />
-
+                <StackLayout Grid.Row="1" Padding="30, 20">
                     <Entry
                         x:Name="EmailTxt" 
-                        Placeholder="Correo@Correo.com"
-                        BackgroundColor="LightGray" 
+                        Placeholder="Correo@Correo.com" PlaceholderColor="White" 
                         Margin="10,0,30,0" Keyboard="Email" />
-
-                    <Label 
-                        Text="Usuario"
-                        HorizontalOptions="Start" 
-                        Margin="0,10,0,0" 
-                        Padding="5,8,50,8" 
-                        TextColor="White" />
 
                     <Entry 
                         x:Name="UsernameTxt"
-                        Placeholder="Usuario"
-                        BackgroundColor="LightGray" 
+                        Placeholder="Usuario" PlaceholderColor="White" 
                         Margin="10,0,30,0" Keyboard="Plain" />
-
-                    <Label
-                        Text="Contraseña"
-                        HorizontalOptions="Start"
-                        Margin="0,10,0,0" Padding="5,8,50,8" 
-                        TextColor="White" />
 
                     <Entry
                         x:Name="PasswordTxt" 
-                        Placeholder="Contraseña"
-                        BackgroundColor="LightGray" 
+                        Placeholder="Contraseña" PlaceholderColor="White" 
                         Margin="10,0,30,0" IsPassword="True" />
 
                     <Button 
-                        Text="Registrarme y entrar" 
-                        VerticalOptions="EndAndExpand" 
-                        TextColor="White" 
-                        BackgroundColor="Red" 
-                        HorizontalOptions="Center" 
-                        Margin="0,0,0,30" 
+                       Text="Registrar"
+                        BackgroundColor="White"
+                        BorderRadius="20"
+                        TextColor="#3b83bd" 
                         Clicked="RegisterBtn_Clicked" />
-
                 </StackLayout>
-            </Frame>
-        </StackLayout>
-        <Button Text="Go Back" Clicked="GoBackBtn_Clicked" HorizontalOptions="Start" VerticalOptions="Start" />
-    </Grid>
+            </Grid>
+            <Button Text="Go Back" Clicked="GoBackBtn_Clicked" HorizontalOptions="Start" VerticalOptions="Start" />
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

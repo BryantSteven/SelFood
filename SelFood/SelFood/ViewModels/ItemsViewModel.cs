@@ -7,11 +7,13 @@ using Xamarin.Forms;
 
 using SelFood.Models;
 using SelFood.Views;
+using SelFood.Services;
 
 namespace SelFood.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
+        private IDataStore<Product> _productsDataStore => DependencyService.Get<IDataStore<Product>>();
         public ObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 

@@ -11,6 +11,7 @@ namespace SelFood
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<ProductsDataStore>();
             MainPage = new MainPage();
 
 

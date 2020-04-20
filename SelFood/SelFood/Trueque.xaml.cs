@@ -15,6 +15,23 @@ namespace SelFood
         public Trueque()
         {
             InitializeComponent();
+            var text1 = Producto.Text;
+        }
+
+        private void Btn_Buscar(object sender, EventArgs e)
+        {
+            var text1 = Producto.Text;
+            
+
+        }
+
+        private void Btn_Post(object sender, EventArgs e)
+        {
+            var text2 = Post.Text;
+        }
+
+        async void GoBackBtn_Clicked(object sender, EventArgs e) {
+            await Navigation.PopModalAsync();
         }
     }
 }

@@ -2858,16 +2858,16 @@ namespace SelFood.Droid
 			public const int design_snackbar_out = 2130771983;
 			
 			// aapt resource value: 0x7F010010
-			public const int EnterFromLeft = 2130771984;
+			public const int enterfromleft = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int EnterFromRight = 2130771985;
+			public const int enterfromright = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int ExitToLeft = 2130771986;
+			public const int exittoleft = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int ExitToRight = 2130771987;
+			public const int exittoright = 2130771987;
 			
 			static Animation()
 			{
@@ -6918,7 +6918,7 @@ namespace SelFood.Droid
 			public const int abc_tooltip = 2131427355;
 			
 			// aapt resource value: 0x7F0B001C
-			public const int BottomTabLayout = 2131427356;
+			public const int bottomtablayout = 2131427356;
 			
 			// aapt resource value: 0x7F0B001D
 			public const int browser_actions_context_menu_page = 2131427357;
@@ -6969,7 +6969,7 @@ namespace SelFood.Droid
 			public const int design_text_input_password_icon = 2131427372;
 			
 			// aapt resource value: 0x7F0B002D
-			public const int FlyoutContent = 2131427373;
+			public const int flyoutcontent = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
 			public const int mtrl_layout_snackbar = 2131427374;
@@ -7023,7 +7023,7 @@ namespace SelFood.Droid
 			public const int notification_template_part_time = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int RootLayout = 2131427391;
+			public const int rootlayout = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
 			public const int select_dialog_item_material = 2131427392;
@@ -7035,7 +7035,7 @@ namespace SelFood.Droid
 			public const int select_dialog_singlechoice_material = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int ShellContent = 2131427395;
+			public const int shellcontent = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
 			public const int support_simple_spinner_dropdown_item = 2131427396;

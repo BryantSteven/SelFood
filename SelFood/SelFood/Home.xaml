@@ -5,39 +5,95 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="SelFood.Home"
-             BackgroundImageSource="Splash.jpg">
-    <!--<Label Text="Contraseña" HorizontalOptions="Start" Margin="0,50,0,0" Padding="5,8,50,8" TextColor="White" />-->
+             BackgroundImageSource="Home.jpg">
+    
 
-    <Grid IsVisible="True">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="150"  />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <StackLayout Grid.Column="0" Grid.Row="0" Margin="0,60,0,40">
-            <Image Source="potato.png" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0"></Image>
-            <Button x:Name="papa" Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro"  ></Button>
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            
+            
+            <Button 
+                Text="Go Back"  
+                HorizontalOptions="Start" 
+                VerticalOptions="Start" 
+                Clicked="GoBackBtn_Clicked" />
+            <Button 
+                Text="Trueque"  
+                Grid.Column="3"
+                HorizontalOptions="Start" 
+                VerticalOptions="Start" 
+                Clicked="TruequeBtn_Clicked" />
 
-        </StackLayout>
-        <StackLayout Grid.Column="0" Grid.Row="1" Margin="0,100,0,50">
-            <Image Source="oliveoil.png" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="1"></Image>
-            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
+            <Entry
+                x:Name="ProductEn"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Column="0"
+                Grid.Row="1"
+                Placeholder="Producto"
+                />
+            <Entry
+                x:Name="QuantityEn"
+                TextColor="Black"
+                Grid.Column="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="1"
+                Keyboard="Numeric"
+                Placeholder="Cantidad" 
+                Text="{Binding Item.Text}"/>
+            <Button
+                x:Name="AddBtn"
+                Grid.Column="3"
+                Grid.Row="1"
+                Text="Agregar"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="Red"
+                TextColor="White"
+                ScaleX="1"
+                Clicked="AddBtn_Clicked" />
+            <SearchBar 
+                Placeholder="Buscas algo ?"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="4"
+                BackgroundColor="White"
+                PlaceholderColor="Red"
+                TranslationX="5"/>
+            <Label
+                Text="Mis ingredientes"
+                FontSize="Large"
+                TextColor="Black"
+                AnchorX="20"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="3"
+                Padding="5"
+                HorizontalOptions="Center"/>
 
-        </StackLayout>
-        <StackLayout Grid.Column="1" Grid.Row="0" Margin="0,60,0,40">
-            <Image Source="egg1.png" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center"></Image>
-            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
-        </StackLayout>
-        <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
-        <Button Text="Trueque" HorizontalOptions="EndAndExpand" VerticalOptions="Start" Grid.Column="1" Grid.Row="0" Clicked="Butt_Trueque_Clicked"></Button>
-        <Button Text="Entrar" VerticalOptions="EndAndExpand" BackgroundColor="Red" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,60" Grid.Row="1" Grid.Column="1" />
-        <StackLayout Grid.Column="1" Grid.Row="1" Margin="0,100,0,50"><Button Text="" />
-            <Image Source="milk.png" HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" VerticalOptions="Center"></Image>
-            <Button Text="Seleccionar" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Red" TextColor="White" FontSize="Micro" ></Button>
-        </StackLayout>
-    </Grid>
+        </Grid>
+        <ListView 
+            x:Name="LvProductsList" 
+            Margin="20" 
+            SeparatorColor="#E15A5A" 
+            BackgroundColor="#000000" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell 
+                        Text="{Binding Name}"
+                        TextColor="Red"
+                        Detail="{Binding Quantity}"
+                        DetailColor="Red"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
+    </StackLayout>
 </ContentPage>

@@ -8,32 +8,35 @@
              BackgroundImageSource="splash.jpg">
     
         <StackLayout>
-            <ScrollView>
-            <Entry Placeholder="Que producto buscas ?" TextColor="White" Keyboard="Plain" Opacity="1" PlaceholderColor="#FFFFFF" />
+        <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
+        <Entry Placeholder="Que producto buscas ?"
+               x:Name="Producto" TextColor="White"
+               Keyboard="Plain"
+               Opacity="1"
+               PlaceholderColor="#FFFFFF" />
+        <Button Text="Buscar"
+                Clicked="Btn_Buscar" 
+                CornerRadius="40" 
+                WidthRequest="20" 
+                HeightRequest="50"></Button>
+        <Entry Placeholder="Oferta" 
+               x:Name="Post" 
+               TextColor="White" 
+               PlaceholderColor="#FFFFFF"></Entry>
+        <Button Text="Postear" Clicked="Btn_Post"
+                CornerRadius="40" 
+                WidthRequest="20" 
+                HeightRequest="50"
+                FontAttributes="Italic"></Button>
+        
+        <ScrollView>
+            
         </ScrollView>
         
-            <Label 
-                Text="Trueque "  
-                TextColor="White"
-                />
-        <Label 
-                Text="Trueque"  
-                TextColor="White"/>
-        <Label 
-                Text="Trueque"  
-                TextColor="White"/>
-        <Label 
-                Text="Trueque"  
-                TextColor="White"/>
-        <Label 
-                Text="Trueque"  
-                TextColor="White"/>
-        <Label 
-                Text="Trueque"  
-                TextColor="White"/>
+          
 
 
-
+    
     </StackLayout>
    
 </ContentPage>

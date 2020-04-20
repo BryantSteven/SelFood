@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SelFood.Models;
+using SelFood.Services.Interfaces;
+using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,37 +10,37 @@ namespace SelFood
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
+        //private IList<Product> _products;
+
         public Home()
         {
-            
             InitializeComponent();
+          
         }
 
         async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PopModalAsync();
+        }
 
+        private void AddBtn_Clicked(object sender, EventArgs e)
+        {
+            //MessagingCenter.Send(this, "AddProduct", ProductsList);
+            var name = ProductEn.Text;
+            var Quantity = QuantityEn.Text;
+            ProductsList product = new ProductsList();
+            LvProductsList.ItemsSource = product._product;
+            
 
         }
 
-         async void Butt_Trueque_Clicked(object sender, EventArgs e)
+
+
+        private async void TruequeBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new Trueque());
         }
-        ////async void Butt_ingresarPapa_Clicked(object sender, EventArgs e)
-        ////{
-        ////    
-        ////    await firebase
-        ////    .Child("Ingredients")
-        ////    .PostAsync(new (ingredient) { ingredientId = 1, Name = papa });
-        ////}
-       
-        //public async Task Addingredient(string ingredient)
-        //{
+    }
 
-        //    await firebase.Child("Ingredients").PostAsync(new ingredient() { IngredientId = new IngredientId, Name = ingredient });
-              
-              
-
-        }
+  
 }

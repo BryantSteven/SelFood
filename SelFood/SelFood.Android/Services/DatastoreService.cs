@@ -7,7 +7,7 @@ namespace SelFood.Droid.Services
     public class DatastoreService
     {
      
-        public async Task<string> CargarIngrediente()
+       /* public async Task<string> CargarIngrediente()
         {
             try
             {
@@ -21,6 +21,6 @@ namespace SelFood.Droid.Services
                 Console.WriteLine($"Error: {e}");
             }
             return string.Empty;
-        }
+        }*/
     }
 }

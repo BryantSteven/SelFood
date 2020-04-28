@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:pages="clr-namespace:SelFood.Views"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:pages1="clr-namespace:SelFood"
+                  mc:Ignorable="d"
+             x:Class="SelFood.Views.MasterView">
+    <MasterDetailPage.Master>
+        <pages:MenuView/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage
+            BarTextColor="{StaticResource FontColor}"
+            BarBackgroundColor="{StaticResource MainColor}"
+            x:Name="Navigator">
+            <x:Arguments>
+                <pages1:Ingredientes/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

@@ -4,6 +4,82 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="{StaticResource BackGroundColor}"
              x:Class="SelFood.Ingredientes">
-    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    
+                </Grid.ColumnDefinitions>
+
+                <Entry
+                    
+                    x:Name="ProductEn"
+                    TextColor="{StaticResource FontColor}"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Placeholder="Producto"
+                    PlaceholderColor="{StaticResource FontColor}"
+
+                />
+                
+                <Entry
+                  
+                     x:Name="QuantityEn"
+                     TextColor="{StaticResource FontColor}"
+                     Grid.Column="1"
+                     Grid.Row="1"
+                     Keyboard="Numeric"
+                     Placeholder="Cantidad"
+                     PlaceholderColor="{StaticResource FontColor}"
+                     Text="{Binding Item.Text}"
+
+                    />
+                
+                <Label
+                    Text="Mis ingredientes"
+                    FontSize="Large"
+                    TextColor="{StaticResource FontColor}"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                   />
+
+                <SearchBar 
+                    Margin="0,0,25,0"
+                    Placeholder="¿Buscas algo👀?"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="4"
+                    BackgroundColor="{StaticResource BackGroundColor}"
+                    PlaceholderColor="{StaticResource FontColor}"
+                    TranslationX="5"
+                    HorizontalOptions="Fill"/>
+
+
+            </Grid>
+
+            <ListView 
+                x:Name="LvProductsList" 
+                Margin="20" 
+                SeparatorColor="#E15A5A" 
+                BackgroundColor="#000000" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell 
+                            Text="{Binding Name}"
+                            TextColor="Red"
+                            Detail="{Binding Quantity}"
+                            DetailColor="Red"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

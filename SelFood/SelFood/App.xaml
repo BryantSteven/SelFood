@@ -6,6 +6,12 @@
              mc:Ignorable="d"
              x:Class="SelFood.App">
     <Application.Resources>
+        <!--Colors-->
+        <Color x:Key="MainColor">#023059</Color>
+        <Color x:Key="FontColor">#F2F2F2</Color>
+        <Color x:Key="AccentColor1">#023059</Color>
+        <Color x:Key="AccentColor2">#4A738C</Color>
+        <Color x:Key="BackGroundColor">#012340</Color>
         
     </Application.Resources>
 </Application>

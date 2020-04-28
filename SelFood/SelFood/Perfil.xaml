@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SelFood.Perfil"
+             BackgroundImageSource="splash.jpg">
+    
+        <StackLayout>
+            <Button 
+                Text="Go Back"  
+                HorizontalOptions="Start" 
+                VerticalOptions="Start" 
+                Clicked="GoBackBtn_Clicked" />
+            <Frame CornerRadius="120" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="170" HeightRequest="49" Margin="50">
+            <Label Text="Mi perfil" 
+                   HorizontalOptions="Center"
+                   FontSize="Title" 
+                   TextColor="Black" 
+                   FontAttributes="Bold"
+                   Margin="10"
+                   />
+        </Frame>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" >
+                <ImageButton Source="egg1.png" x:Name="ImagenPerfil" Clicked="Btn_Image_Cliked" HeightRequest="80"></ImageButton>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Frame HeightRequest="25" CornerRadius="206" Margin="5">
+                <Label x:Name="Username" Text="Usuario" 
+                       TextColor="Black" 
+                       HorizontalOptions="CenterAndExpand" 
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       ></Label>
+                </Frame>
+                </StackLayout>
+        </Grid>
+            <StackLayout>
+                <Frame >
+                <StackLayout>
+                    <Label Text="¿Quien Soy"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           
+                           ></Label>
+                    <Label x:Name="Descripcion" Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "></Label>
+                </StackLayout>
+                </Frame>            
+            </StackLayout>
+        <Button 
+                Text="Editar"  
+                HorizontalOptions="End" 
+                />
+    </StackLayout>
+    
+</ContentPage>

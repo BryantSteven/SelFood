@@ -32,8 +32,8 @@
             <Entry
                 x:Name="ProductEn"
                 TextColor="Black"
-                VerticalOptions="Center"
                 HorizontalOptions="Center"
+                VerticalOptions="Center"
                 Grid.Column="0"
                 Grid.Row="1"
                 Placeholder="Producto"

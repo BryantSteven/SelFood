@@ -8,13 +8,17 @@ using Xamarin.Forms.Xaml;
 namespace SelFood
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class Home : MasterDetailPage
     {
         //private IList<Product> _products;
 
         public Home()
         {
             InitializeComponent();
+            this.Master = new master();
+            this.Detail = new NavigationPage(new detail());
+
+            App.MasterD = this;
           
         }
 
@@ -26,10 +30,10 @@ namespace SelFood
         private void AddBtn_Clicked(object sender, EventArgs e)
         {
             //MessagingCenter.Send(this, "AddProduct", ProductsList);
-            var name = ProductEn.Text;
-            var Quantity = QuantityEn.Text;
-            ProductsList product = new ProductsList();
-            LvProductsList.ItemsSource = product._product;
+            //var name = ProductEn.Text;
+            //var Quantity = QuantityEn.Text;
+            //ProductsList product = new ProductsList();
+            //LvProductsList.ItemsSource = product._product;
             
 
         }

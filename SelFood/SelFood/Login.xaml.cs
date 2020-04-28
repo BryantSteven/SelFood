@@ -29,11 +29,11 @@ namespace SelFood
             var fbLogin = DependencyService.Get<IAuthService>();
             var token = await fbLogin.SignIn(EmailTxt.Text, PasswordTxt.Text);
 
-            //if (string.IsNullOrWhiteSpace(token))
-            //{
-            //    await DisplayAlert("Alerta", "No se pudo iniciar sesión", "OK");
-            //    return;
-            //}
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                await DisplayAlert("Alerta", "No se pudo iniciar sesión", "OK");
+                return;
+            }
 
             await Navigation.PushModalAsync(new Home());
         }

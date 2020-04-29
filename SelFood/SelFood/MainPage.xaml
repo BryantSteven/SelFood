@@ -19,9 +19,20 @@
             <Frame BackgroundColor="Black" CornerRadius="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label 
-                        Text="¿Qué deseas hacer?" HorizontalOptions="Center" Margin="20" TextColor="White" />
+                        Text="¿Qué deseas hacer?" 
+                        HorizontalOptions="Center" 
+                        Margin="20" TextColor="White" />
                     <Button
-                        CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero iniciar sesión" HorizontalOptions="Center" TextColor="White" Clicked="Login_Clicked" FontAttributes="Bold" FontSize="Large" />
+                        CornerRadius="80" 
+                        WidthRequest="160" 
+                        HeightRequest="160" 
+                        BackgroundColor="Red" 
+                        Text="Quiero iniciar sesión"
+                        HorizontalOptions="Center"
+                        TextColor="White" 
+                        Clicked="Login_Clicked" 
+                        FontAttributes="Bold" 
+                        FontSize="Large" />
                     <Button 
                         CornerRadius="80" WidthRequest="160" HeightRequest="160" BackgroundColor="Red" Text="Quiero registrarme" HorizontalOptions="Center" TextColor="White" Margin="0,50,0,0" Clicked="RegisterBtn_Clicked" FontAttributes="Bold" FontSize="Large"/>
                 </StackLayout>

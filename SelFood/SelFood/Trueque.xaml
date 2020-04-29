@@ -8,7 +8,12 @@
              BackgroundImageSource="splash.jpg">
     
         <StackLayout>
-        <Button Text="Go Back"  HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBackBtn_Clicked"  />
+        <Button 
+            Text="Go Back"  
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            Clicked="GoBackBtn_Clicked"  />
+            
         <Entry Placeholder="Que producto buscas ?"
                x:Name="Producto" TextColor="White"
                Keyboard="Plain"

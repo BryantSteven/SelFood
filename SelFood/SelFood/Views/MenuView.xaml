@@ -25,6 +25,7 @@
                     Text="Perfil"
                     TextColor="{StaticResource FontColor}"
                     HorizontalOptions="Fill"
+                     Clicked="PerfilBtn_Clicked"
                     >
             </Button>
 

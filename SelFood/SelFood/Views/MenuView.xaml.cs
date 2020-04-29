@@ -18,26 +18,27 @@ namespace SelFood.Views
         }
         async void IngredientesBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            
+
             await Navigation.PushModalAsync(new Ingredientes());
         }
         async void LoginBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            
+
             await Navigation.PushModalAsync(new Login());
         }
         async void TruequeBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            
+
             await Navigation.PushModalAsync(new Trueque());
         }
         private void Button_Clicked(object sender, EventArgs e)
         {
 
         }
-        /*  async void PerfilBtn_Clicked(System.Object sender, System.EventArgs e)
- {
-     await Navigation.PushModalAsync(new Perfil());
- }*/
+        async void PerfilBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Perfil());
+
+        }
     }
 }

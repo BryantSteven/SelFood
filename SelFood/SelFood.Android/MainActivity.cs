@@ -34,6 +34,7 @@ namespace SelFood.Droid
             var options = new FirebaseOptions.Builder()
             .SetApplicationId("1:1028475350645:android:82cf6953c70c2c21c1523c")
             .SetApiKey("AIzaSyABSbm6wqsEFaB_4vL8ReIRXMXg1NqbF2E")
+            .SetDatabaseUrl("https://selfood-badba.firebaseio.com/")
             .Build();
 
             if (app == null)

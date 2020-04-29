@@ -15,6 +15,7 @@ namespace SelFood
         public Ingredientes()
         {
             InitializeComponent();
+            
         }
     }
 }

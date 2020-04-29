@@ -1,4 +1,5 @@
 ﻿using SelFood.Services.Interfaces;
+using SelFood.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,8 +35,8 @@ namespace SelFood
                 await DisplayAlert("Alerta", "No se pudo iniciar sesión", "OK");
                 return;
             }
-
-            await Navigation.PushModalAsync(new Home());
+            
+            await Navigation.PushModalAsync(new MasterView());
         }
     }
 }

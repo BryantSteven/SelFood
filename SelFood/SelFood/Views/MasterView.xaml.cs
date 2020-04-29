@@ -7,14 +7,20 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SelFood
+namespace SelFood.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class detail : ContentPage
+    public partial class MasterView : MasterDetailPage
     {
-        public detail()
+        public MasterView()
         {
             InitializeComponent();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            App.Navigator = Navigator;
+            App.Master = this;
         }
     }
 }

@@ -8,21 +8,17 @@ using Xamarin.Forms.Xaml;
 namespace SelFood
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : MasterDetailPage
+    public partial class Home : Shell
     {
         //private IList<Product> _products;
 
         public Home()
         {
             InitializeComponent();
-            this.Master = new master();
-            this.Detail = new NavigationPage(new detail());
-
-            App.MasterD = this;
-          
+                     
         }
 
-        async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
+      /*  async void GoBackBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PopModalAsync();
         }
@@ -43,7 +39,7 @@ namespace SelFood
         private async void TruequeBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new Trueque());
-        }
+        }*/
     }
 
   

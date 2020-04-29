@@ -22,21 +22,22 @@
                 <StackLayout Grid.Row="1" Padding="30, 20">
                     <Entry 
                         x:Name="EmailTxt"
-                        Placeholder="Usuario" PlaceholderColor="White" 
+                        Placeholder="Usuario" PlaceholderColor="{d:StaticResource FontColor}" 
                         Keyboard="Email" />
 
                     <Entry 
                         x:Name="PasswordTxt"
-                        Placeholder="Contraseña" PlaceholderColor="White"
+                        Placeholder="Contraseña" PlaceholderColor="{d:StaticResource FontColor}"
                         IsPassword="True" />
 
                     <Button 
-                        Text="Iniciar sesión" BackgroundColor="White" BorderRadius="20"
-                        TextColor="#3b83bd"
+                        Text="Iniciar sesión" BackgroundColor="{d:StaticResource AccentColor1}" BorderRadius="20"
+                        TextColor="{d:StaticResource FontColor}"
                         Clicked="LoginBtn_Clicked" />
                     <Button 
-                        Text="Registrar" BackgroundColor="White" BorderRadius="20"
-                        TextColor="#3b83bd"
+                        Text="Registrar" BackgroundColor="{d:StaticResource AccentColor2}" BorderRadius="20"
+                        TextColor="{d:StaticResource FontColor}"
+           
                         Clicked="RegisterBtn_Clicked"/>
 
                     <StackLayout Orientation="Horizontal">

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:pages="clr-namespace:SelFood.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            BackgroundColor="{StaticResource BackGroundColor}"
+             x:Class="SelFood.Views.MenuView"
+             Title="Menu">
+    
+        <StackLayout
+            Padding="10,30">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="Menú"
+                TextColor="{StaticResource FontColor}">
+            </Label>
+        <StackLayout>
+            <Button
+                    ImageSource="ic_settings.png"
+                    BackgroundColor="{StaticResource BackGroundColor}"
+                    Grid.Column="0"
+                    Text="Perfil"
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Fill"
+                    >
+            </Button>
+
+            <Button
+                    ImageSource="ic_fastfood.png"
+                    BackgroundColor="{StaticResource BackGroundColor}"
+                    Grid.Column="1"
+                    Text="Ingredientes"
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Fill"
+                    Clicked="IngredientesBtn_Clicked">
+            </Button>
+             <Button
+                    ImageSource="ic_exit_to_app.png"
+                    BackgroundColor="{StaticResource BackGroundColor}"
+                    Grid.Column="2"
+                    Text="Trueques"
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Fill"
+                     Clicked="TruequeBtn_Clicked">
+            </Button>
+        </StackLayout>
+        <Button
+                    ImageSource="ic_exit_to_app.png"
+                    BackgroundColor="{StaticResource BackGroundColor}"
+                    Text="Salir"
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Fill"
+                  Clicked=  "LoginBtn_Clicked">
+            </Button>
+            
+
+
+        </StackLayout>
+    </ContentPage>
